@@ -1,0 +1,95 @@
+Build a responsive, single-page portfolio website using React. The site should include the following sections based on this resume content:
+
+1. Header (Navbar)
+
+Name: Kishor Wadeyar
+
+Links to sections: Home, About, Skills, Projects, Contact
+
+GitHub and LinkedIn icons on the right side
+
+2. Home Section
+
+Display:
+
+A greeting like: “Hi, I'm Kishor Wadeyar 👋”
+
+A short intro like: “Full Stack Developer | AIML Enthusiast | Final Year BE Student”
+
+A call-to-action button linking to the contact section
+
+3. About Section
+Show this short paragraph:
+
+An enthusiastic and driven Information Science and Engineering student at Dayananda Sagar College of Engineering with a strong command over full-stack web development using the MERN stack. I have hands-on experience in building responsive and dynamic web applications. Passionate about solving real-world problems through technology, I’m eager to contribute to projects that combine the power of intelligent systems and modern web technologies.
+
+4. Skills Section
+
+Full-Stack Development: JavaScript, React.js, Node.js, Express.js, MongoDB, Tailwind CSS
+
+Machine Learning & AI: Python, NumPy, Pandas, Matplotlib
+
+Techniques: Regression, Classification, Clustering, Dimensionality Reduction, Model Tuning
+
+5. Education Section
+
+Bachelor of Engineering in Information Science and Engineering
+Dayananda Sagar College of Engineering, Bangalore
+2022–2026 (Expected), Average CGPA: 8.77
+
+6. Projects Section
+Create responsive cards for each project with:
+
+Title
+
+Short description
+
+GitHub link
+
+Optional: Live link (if available)
+
+Projects:
+
+Amazon Clone – HTML/CSS-based Amazon-style e-commerce UI
+
+Live: https://kishorwadeyar.github.io/AmazonClone/
+
+GitHub: https://github.com/KishorWadeyar/AmazonClone
+
+Todo App – React + Material UI task manager
+
+GitHub: https://github.com/KishorWadeyar/To-doApp
+
+Weather App – JavaScript app using weather API
+
+GitHub: https://github.com/KishorWadeyar/WeatherApp
+
+Bookstore Website – Full-stack e-commerce (MERN)
+
+GitHub: https://github.com/KishorWadeyar/BookStore
+
+Sonar Rock vs Mine Prediction – ML project using supervised learning
+
+GitHub: https://github.com/KishorWadeyar/Sonar_Rock_Mine_Prediction
+
+Healthcare Chatbot (LLaMA 2) – Python-based AI chatbot using RAG and NLP
+
+GitHub: https://github.com/KishorWadeyar/Healthcare_Chatbot
+
+7. Contact Section
+
+Email: kishor.wadeyar@gmail.com
+
+GitHub: https://github.com/KishorWadeyar
+
+LinkedIn: https://www.linkedin.com/in/kishorwadeyar/
+
+8. Styling
+
+Use responsive design (mobile-friendly)
+
+Keep the color scheme minimal (light mode is fine)
+
+Use either basic CSS or Tailwind CSS for layout and styling
+
+Add subtle hover effects on project cards and nav links
