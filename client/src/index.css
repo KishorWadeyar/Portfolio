@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(222, 47%, 11%);
+  --foreground: hsl(226, 64%, 88%);
+  --muted: hsl(222, 14%, 25%);
+  --muted-foreground: hsl(225, 5%, 45%);
+  --popover: hsl(222, 47%, 11%);
+  --popover-foreground: hsl(226, 64%, 88%);
+  --card: hsl(222, 47%, 11%);
+  --card-foreground: hsl(226, 64%, 88%);
+  --border: hsl(224, 27%, 20%);
+  --input: hsl(224, 27%, 20%);
+  --primary: hsl(231, 90%, 63%);
+  --primary-foreground: hsl(210, 100%, 99%);
+  --secondary: hsl(222, 14%, 25%);
+  --secondary-foreground: hsl(226, 64%, 88%);
+  --accent: hsl(222, 14%, 25%);
+  --accent-foreground: hsl(226, 64%, 88%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(60, 9%, 98%);
+  --ring: hsl(231, 90%, 63%);
+  --radius: 0.5rem;
+  --dark-primary: hsl(222, 47%, 6%);
+  --dark-secondary: hsl(224, 33%, 12%);
+  --dark-accent: hsl(224, 27%, 20%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-inter antialiased text-foreground;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, hsl(222, 47%, 6%) 0%, hsl(224, 33%, 12%) 50%, hsl(224, 27%, 20%) 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(135deg, hsl(222, 47%, 6%) 0%, hsl(224, 33%, 12%) 50%, hsl(224, 27%, 20%) 100%);
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(231, 90%, 63%) 0%, hsl(262, 83%, 68%) 100%);
+  }
+  
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .nav-link {
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: hsl(231, 90%, 63%);
+  }
+  
+  .nav-link.active {
+    color: hsl(231, 90%, 63%);
+    font-weight: 600;
+  }
+  
+  .skill-badge {
+    background: linear-gradient(135deg, hsl(231, 90%, 63%) 0%, hsl(262, 83%, 68%) 100%);
+    transition: all 0.3s ease;
+  }
+  
+  .skill-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4);
+  }
+  
+  .social-icon {
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    color: hsl(231, 90%, 63%);
+  }
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
