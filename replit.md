@@ -84,18 +84,25 @@ Preferred communication style: Simple, everyday language.
 
 ## Deployment Strategy
 
-### Build Process
-1. **Frontend**: Vite builds optimized React application to `dist/public`
-2. **Backend**: ESBuild bundles server code to `dist/index.js`
-3. **Assets**: Static assets served from build output
+### Static Build Process
+1. **Frontend Only**: Vite builds optimized React application to `dist/public`
+2. **Static Assets**: All content served as static files
+3. **No Backend**: Converted to static portfolio without server dependencies
+
+### Vercel Deployment
+- **Build Command**: `npx vite build` configured in vercel.json
+- **Output Directory**: `dist/public` contains all static assets
+- **SPA Routing**: Configured with rewrites for single-page application
+- **Automatic Deployment**: Ready for GitHub integration with Vercel
 
 ### Environment Configuration
-- **Development**: Node.js with tsx for TypeScript execution
-- **Production**: Compiled JavaScript with NODE_ENV=production
-- **Database**: DATABASE_URL environment variable for connection
+- **Development**: Vite development server
+- **Production**: Static HTML, CSS, and JavaScript files
+- **No Database**: All content is static/hardcoded in components
+- **Vercel**: Optimized for Vercel serverless deployment
 
 ### Hosting Considerations
-- **Static Assets**: Can be served via CDN
-- **Server**: Node.js server required for backend functionality
-- **Database**: Serverless PostgreSQL via Neon Database
-- **Replit**: Optimized for Replit hosting environment
+- **Static Only**: Pure frontend application, no server required
+- **CDN**: Automatically served via Vercel's global CDN
+- **Domain**: Can use custom domain or vercel.app subdomain
+- **Performance**: Optimized build with code splitting and compression
